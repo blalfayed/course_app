@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "127997637292",
+    "project_id": "belallllcourse4",
+    "storage_bucket": "belallllcourse4.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:127997637292:android:5a5674e24ae0f2d99b2509",
+        "android_client_info": {
+          "package_name": "com.example.course_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqvVCLT_zCqpCh9kDwZ-D8hh3XqrCRYMk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
