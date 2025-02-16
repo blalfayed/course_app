@@ -5,6 +5,7 @@ import 'package:course_app/screens/course_details_page.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import '../models/course_model.dart';
 
 class CoursesListPage extends StatefulWidget {
@@ -213,6 +214,8 @@ class _CoursesListPageState extends State<CoursesListPage> {
 
   @override
   Widget build(BuildContext context) {
+    final mediaQ = MediaQuery.of(context);
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Courses List'),
@@ -229,6 +232,8 @@ class _CoursesListPageState extends State<CoursesListPage> {
           ),
           TextButton(
             onPressed: () {
+              GoogleSignIn googleSignIn = GoogleSignIn();
+              googleSignIn.disconnect();
               _auth.signOut();
               Navigator.pop(context);
             },
@@ -299,14 +304,14 @@ class _CoursesListPageState extends State<CoursesListPage> {
                           .toList();
 
                   return GridView.builder(
-                    scrollDirection: Axis.horizontal,
+                    scrollDirection: Axis.vertical,
                     padding: const EdgeInsets.all(10),
                     gridDelegate:
                         const SliverGridDelegateWithFixedCrossAxisCount(
                       crossAxisCount: 2,
                       crossAxisSpacing: 16,
                       mainAxisSpacing: 10,
-                      childAspectRatio: 1.5,
+                      childAspectRatio: .4,
                     ),
                     itemCount: _filteredCourses.length,
                     itemBuilder: (context, index) {

@@ -171,6 +171,8 @@ class _CoursesListPageUsersState extends State<CoursesListPageUsers> {
 
   @override
   Widget build(BuildContext context) {
+    final mediaQ = MediaQuery.of(context);
+
     return Scaffold(
       appBar: AppBar(
         title: const Text('Courses List'),

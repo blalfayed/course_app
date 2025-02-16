@@ -48,6 +48,7 @@ dependencies:
   youtube_player_flutter: ^9.1.1
   animate_do: ^3.3.4
   paypal_sdk: ^1.0.10
+  google_sign_in: ^6.2.2
 
 dev_dependencies:
   flutter_test:

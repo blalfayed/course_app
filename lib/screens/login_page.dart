@@ -1,5 +1,7 @@
 // ignore_for_file: use_key_in_widget_constructors, unnecessary_null_comparison, use_build_context_synchronously, avoid_print
 
+import 'package:google_sign_in/google_sign_in.dart';
+
 import 'package:course_app/screens/main_page_users.dart';
 import 'package:course_app/screens/registration_page.dart';
 import 'package:flutter/material.dart';
@@ -20,6 +22,28 @@ class _LoginPageState extends State<LoginPage> {
   late String email;
   late String password;
   bool showSpinner = false;
+
+  Future signInWithGoogle() async {
+    // Trigger the authentication flow
+    final GoogleSignInAccount? googleUser = await GoogleSignIn().signIn();
+    if (googleUser == null) {
+      return;
+    }
+
+    // Obtain the auth details from the request
+    final GoogleSignInAuthentication? googleAuth =
+        await googleUser?.authentication;
+
+    // Create a new credential
+    final credential = GoogleAuthProvider.credential(
+      accessToken: googleAuth?.accessToken,
+      idToken: googleAuth?.idToken,
+    );
+
+    // Once signed in, return the UserCredential
+    await FirebaseAuth.instance.signInWithCredential(credential);
+    Navigator.pushNamed(context, MainPage.screenRoute);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -168,6 +192,13 @@ class _LoginPageState extends State<LoginPage> {
                     onPressed: () {
                       Navigator.pushNamed(
                           context, RegistrationPage.screenRoute);
+                    },
+                  ),
+                  MyButton(
+                    colors: const Color.fromARGB(255, 173, 157, 15),
+                    title: 'Login With Google',
+                    onPressed: () {
+                      signInWithGoogle();
                     },
                   ),
                   const SizedBox(height: 20),

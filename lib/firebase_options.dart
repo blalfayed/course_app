@@ -63,6 +63,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '127997637292',
     projectId: 'belallllcourse4',
     storageBucket: 'belallllcourse4.firebasestorage.app',
+    iosClientId: '127997637292-gdgeo1doalfin25vbh4rk6i3a4i09pqe.apps.googleusercontent.com',
     iosBundleId: 'com.example.courseApp',
   );
 
@@ -72,6 +73,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '127997637292',
     projectId: 'belallllcourse4',
     storageBucket: 'belallllcourse4.firebasestorage.app',
+    iosClientId: '127997637292-gdgeo1doalfin25vbh4rk6i3a4i09pqe.apps.googleusercontent.com',
     iosBundleId: 'com.example.courseApp',
   );
 
@@ -83,4 +85,5 @@ class DefaultFirebaseOptions {
     authDomain: 'belallllcourse4.firebaseapp.com',
     storageBucket: 'belallllcourse4.firebasestorage.app',
   );
+
 }
