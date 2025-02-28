@@ -97,6 +97,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.18.0"
+<<<<<<< HEAD
   convert:
     dependency: transitive
     description:
@@ -105,6 +106,8 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.1.2"
+=======
+>>>>>>> 576fa350cb4628fe909b5ccefc95e2931f5d70b0
   cross_file:
     dependency: transitive
     description:
@@ -113,6 +116,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.3.4+2"
+<<<<<<< HEAD
   crypto:
     dependency: transitive
     description:
@@ -121,6 +125,8 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.0.6"
+=======
+>>>>>>> 576fa350cb4628fe909b5ccefc95e2931f5d70b0
   csslib:
     dependency: transitive
     description:
@@ -318,6 +324,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "4.0.0"
+<<<<<<< HEAD
   flutter_paypal:
     dependency: "direct main"
     description:
@@ -326,6 +333,8 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "0.2.1"
+=======
+>>>>>>> 576fa350cb4628fe909b5ccefc95e2931f5d70b0
   flutter_plugin_android_lifecycle:
     dependency: transitive
     description:
@@ -334,6 +343,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "2.0.23"
+<<<<<<< HEAD
   flutter_spinkit:
     dependency: transitive
     description:
@@ -342,6 +352,8 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "5.2.1"
+=======
+>>>>>>> 576fa350cb4628fe909b5ccefc95e2931f5d70b0
   flutter_test:
     dependency: "direct dev"
     description: flutter
@@ -416,6 +428,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.2.2"
+<<<<<<< HEAD
   http_auth:
     dependency: transitive
     description:
@@ -424,6 +437,8 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.0.4"
+=======
+>>>>>>> 576fa350cb4628fe909b5ccefc95e2931f5d70b0
   http_parser:
     dependency: transitive
     description:
@@ -837,6 +852,7 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.1.0"
+<<<<<<< HEAD
   webview_flutter:
     dependency: transitive
     description:
@@ -869,6 +885,8 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "3.18.3"
+=======
+>>>>>>> 576fa350cb4628fe909b5ccefc95e2931f5d70b0
   win32:
     dependency: transitive
     description:
